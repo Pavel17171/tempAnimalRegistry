@@ -1,0 +1,161 @@
+{
+	"name": "Zoo",
+	"animalType": [
+		{
+			"type": "Home animals",
+			"idType": "1",
+			"arrayAnimals": [
+				{
+					"subType": "Dogs",
+					"idSubType": "1-1",
+					"subArrayAnimals": [
+						{
+							"id": "1-1-1",
+							"nickname": "Rex",
+							"command": "sit, stay, come, down, bite, stop, bark, paw, heel, wait, fetch",
+							"birthday": "2022-01-15"
+						},
+						{
+							"id": "1-1-2",
+							"nickname": "Boy",
+							"command": "sit, stay, come, down",
+							"birthday": "2023-05-25"
+						},
+						{
+							"id": "1-1-3",
+							"nickname": "Nayda",
+							"command": "sit, stay, bark, paw, heel",
+							"birthday": "2023-05-25"
+						}
+					]
+				},
+				{
+					"subType": "Cats",
+					"idSubType": "1-2",
+					"subArrayAnimals": [
+						{
+							"id": "1-2-1",
+							"nickname": "Murzik",
+							"command": "sit, stay, come, down",
+							"birthday": "2020-10-11"
+						},
+						{
+							"id": "1-2-2",
+							"nickname": "Felix",
+							"command": "sit, stay, come, down",
+							"birthday": "2023-08-05"
+						},
+						{
+							"id": "1-2-3",
+							"nickname": "Simba",
+							"command": "sit, stay, come, down",
+							"birthday": "2022-05-12"
+						}
+					]
+				},
+				{
+					"subType": "Hamsters",
+					"idSubType": "1-3",
+					"subArrayAnimals": [
+						{
+							"id": "1-3-1",
+							"nickname": "Homka",
+							"command": "sit, stay, come, down",
+							"birthday": "2023-09-01"
+						},
+						{
+							"id": "1-3-2",
+							"nickname": "Persik",
+							"command": "sit, stay, come, down",
+							"birthday": "2023-08-17"
+						},
+						{
+							"id": "1-3-3",
+							"nickname": "Hamst",
+							"command": "sit, stay, come, down",
+							"birthday": "2023-06-18"
+						}
+					]
+				} 					
+			]		
+		},
+		{
+			"type": "Pack animals",
+			"idType": "2",
+			"arrayAnimals": [
+				{
+					"subType": "Horses",
+					"idSubType": "2-1",
+					"subArrayAnimals": [
+						{
+							"id": "2-1-1",
+							"nickname": "Elias",
+							"command": "forward, lynx, step, add, quieter, stand",
+							"birthday": "2007-04-20"
+						},
+						{
+							"id": "2-1-2",
+							"nickname": "Perilli",
+							"command": "forward, hop, lynx, step, stand",
+							"birthday": "2015-03-25"
+						},
+						{
+							"id": "2-1-3",
+							"nickname": "Palmer",
+							"command": "forward, hop, lynx, step, stand",
+							"birthday": "2021-07-12"
+						}
+					]
+				},
+				{
+					"subType": "Camels",
+					"idSubType": "2-2",
+					"subArrayAnimals": [
+						{
+							"id": "2-2-1",
+							"nickname": "Jared",
+							"command": "forward, stand, up, down",
+							"birthday": "2008-02-28"
+						},
+						{
+							"id": "2-2-2",
+							"nickname": "Twist",
+							"command": "forward, stand, up, down",
+							"birthday": "2011-11-11"
+						},
+						{
+							"id": "2-2-3",
+							"nickname": "Agatha",
+							"command": "forward, stand, up, down",
+							"birthday": "2020-09-17"
+						}
+					]
+				},
+				{
+					"subType": "Donkeys",
+					"idSubType": "2-3",
+					"subArrayAnimals": [
+						{
+							"id": "2-3-1",
+							"nickname": "Altair",
+							"command": "forward, stand, up, down",
+							"birthday": "2009-03-28"
+						},
+						{
+							"id": "2-3-2",
+							"nickname": "Nelson",
+							"command": "forward, stand, up, down",
+							"birthday": "2012-12-20"
+						},
+						{
+							"id": "2-3-3",
+							"nickname": "Suriya",
+							"command": "forward, stand, up, down",
+							"birthday": "2014-04-27"
+						}
+					]
+				}
+			]
+		}
+	]
+}
