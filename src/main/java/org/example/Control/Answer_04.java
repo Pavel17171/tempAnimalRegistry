@@ -2,10 +2,9 @@ package org.example.Control;
 
 import org.example.Model.StructureZoo.AnimalType;
 import org.example.Model.StructureZoo.ArrayAnimals;
-import org.example.Model.StructureZoo.SubArrayAnimal;
+import org.example.Model.StructureZoo.Animal;
 import org.example.Model.StructureZoo.Zoo;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -120,12 +119,12 @@ public class Answer_04 {
                 for (ArrayAnimals arrayAnimals : animalType.getArrayAnimals()) {
                     if (flag) {
                         int index = 0;
-                        for (SubArrayAnimal subArrayAnimal : arrayAnimals.getSubArrayAnimals()) {
+                        for (Animal animal : arrayAnimals.getAnimal()) {
                             if (number == count) {
                                 System.out.println("Удалить из реестра животное:\n"
-                                                   + subArrayAnimal + "\n");
+                                                   + animal + "\n");
                                 if (yesOrNo()) {
-                                    arrayAnimals.getSubArrayAnimals().remove(index);
+                                    arrayAnimals.getAnimal().remove(index);
                                 }
                                 flag = false;
                                 break;
@@ -141,7 +140,7 @@ public class Answer_04 {
     }
 
     public static void answer_04_03(Zoo zoo) {
-        List<SubArrayAnimal> allAnimals = getListOfAllAnimalsInZoo(zoo);
+        List<Animal> allAnimals = getListOfAllAnimalsInZoo(zoo);
         int countOfAnimal = allAnimals.size();
         boolean flag = true;
         while (flag) {
@@ -177,12 +176,12 @@ public class Answer_04 {
             if (animalType.getIdType().equals(idClass)) {
                 for (ArrayAnimals arrayAnimals : animalType.getArrayAnimals()) {
                     if (arrayAnimals.getIdSubType().equals(idSub)) {
-                        for (SubArrayAnimal subArrayAnimal : arrayAnimals.getSubArrayAnimals()) {
-                            if (subArrayAnimal.getId().equals(idAnimal)) {
+                        for (Animal animal : arrayAnimals.getAnimal()) {
+                            if (animal.getId().equals(idAnimal)) {
                                 System.out.println("Удалить животное из реестра?");
-                                System.out.println(subArrayAnimal);
+                                System.out.println(animal);
                                 if (yesOrNo()) {
-                                    arrayAnimals.getSubArrayAnimals().remove(index);
+                                    arrayAnimals.getAnimal().remove(index);
                                 }
                                 break;
                             } else {

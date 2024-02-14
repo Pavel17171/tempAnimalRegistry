@@ -50,8 +50,8 @@ public class AnimalType {
                     .append(arrayAnimals.getSubType())
                     .append(":")
                     .append("\n");
-            for (int i = 0; i < arrayAnimals.getSubArrayAnimals().size(); i++) {
-                result.append(arrayAnimals.getSubArrayAnimals().get(i))
+            for (int i = 0; i < arrayAnimals.getAnimal().size(); i++) {
+                result.append(arrayAnimals.getAnimal().get(i))
                         .append("\n");
             }
             result.append("\n");

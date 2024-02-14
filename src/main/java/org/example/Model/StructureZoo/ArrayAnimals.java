@@ -4,12 +4,12 @@ import java.util.List;
 public class ArrayAnimals {
     private String subType;
     private String idSubType;
-    private List<SubArrayAnimal> subArrayAnimals;
+    private List<Animal> animals;
 
-    public ArrayAnimals(String subType, String idSubType, List<SubArrayAnimal> subArrayAnimals) {
+    public ArrayAnimals(String subType, String idSubType, List<Animal> animals) {
         this.subType = subType;
         this.idSubType = idSubType;
-        this.subArrayAnimals = subArrayAnimals;
+        this.animals = animals;
     }
 
     public ArrayAnimals() {}
@@ -29,12 +29,12 @@ public class ArrayAnimals {
         this.idSubType = idSubType;
     }
 
-    public List<SubArrayAnimal> getSubArrayAnimals() {
-        return subArrayAnimals;
+    public List<Animal> getAnimal() {
+        return animals;
     }
 
-    public void setSubArrayAnimals(List<SubArrayAnimal> subArrayAnimals) {
-        this.subArrayAnimals = subArrayAnimals;
+    public void setAnimal(List<Animal> animals) {
+        this.animals = animals;
     }
 
 
@@ -47,8 +47,8 @@ public class ArrayAnimals {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        for (SubArrayAnimal subArrayAnimal : subArrayAnimals) {
-            result.append(subArrayAnimal)
+        for (Animal animal : animals) {
+            result.append(animal)
                     .append("\n");
         }
         return result.toString();

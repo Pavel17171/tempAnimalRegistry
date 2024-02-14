@@ -8,7 +8,7 @@
 				{
 					"subType": "Dogs",
 					"idSubType": 1,
-					"subArrayAnimals": [
+					"animals": [
 						{
 							"id": 1,
 							"nickname": "Rex",
@@ -32,7 +32,7 @@
 				{
 					"subType": "Cats",
 					"idSubType": 2,
-					"subArrayAnimals": [
+					"animals": [
 						{
 							"id": 1,
 							"nickname": "Murzik",
@@ -56,7 +56,7 @@
 				{
 					"subType": "Hamsters",
 					"idSubType": 3,
-					"subArrayAnimals": [
+					"animals": [
 						{
 							"id": 1,
 							"nickname": "Homka",
@@ -86,7 +86,7 @@
 				{
 					"subType": "Horses",
 					"idSubType": 1,
-					"subArrayAnimals": [
+					"animals": [
 						{
 							"id": 1,
 							"nickname": "Elias",
@@ -110,7 +110,7 @@
 				{
 					"subType": "Camels",
 					"idSubType": 2,
-					"subArrayAnimals": [
+					"animals": [
 						{
 							"id": 1,
 							"nickname": "Jared",
@@ -134,7 +134,7 @@
 				{
 					"subType": "Donkeys",
 					"idSubType": 3,
-					"subArrayAnimals": [
+					"animals": [
 						{
 							"id": 1,
 							"nickname": "Altair",

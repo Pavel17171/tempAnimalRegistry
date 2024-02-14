@@ -10,7 +10,7 @@ public class JsonParser {
         Zoo zoo = ReadFile.readFile("DB_Task_13-15.json");
 
         //System.out.println(zoo);
-        System.out.println(zoo.getAnimalType().get(0).getArrayAnimals().get(0).getSubArrayAnimals().get(0).getBirthday());
+        System.out.println(zoo.getAnimalType().get(0).getArrayAnimals().get(0).getAnimal().get(0).getBirthday());
     }
 }
 

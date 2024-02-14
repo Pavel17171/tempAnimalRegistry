@@ -1,22 +1,19 @@
 package org.example.Model.StructureZoo;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class SubArrayAnimal {
+public class Animal {
     private String id;
     private String nickname;
     private String command;
     private String birthday;
 
-    public SubArrayAnimal(String id, String nickname, String command, String birthday) {
+    public Animal(String id, String nickname, String command, String birthday) {
         this.id = id;
         this.nickname = nickname;
         this.command = command;
         this.birthday = birthday;
     }
 
-    public SubArrayAnimal() {}
+    public Animal() {}
     public String getId() {
         return id;
     }

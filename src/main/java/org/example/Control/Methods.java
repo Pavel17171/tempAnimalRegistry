@@ -2,7 +2,7 @@ package org.example.Control;
 
 import org.example.Model.StructureZoo.AnimalType;
 import org.example.Model.StructureZoo.ArrayAnimals;
-import org.example.Model.StructureZoo.SubArrayAnimal;
+import org.example.Model.StructureZoo.Animal;
 import org.example.Model.StructureZoo.Zoo;
 
 import java.time.LocalDate;
@@ -406,8 +406,8 @@ public class Methods {
      * @param zoo реестр животных
      * @return список животных по порядку
      */
-    public static List<SubArrayAnimal> getListOfAllAnimalsInZoo(Zoo zoo) {
-        List<SubArrayAnimal> listOfAnimal = new ArrayList<>();
+    public static List<Animal> getListOfAllAnimalsInZoo(Zoo zoo) {
+        List<Animal> listOfAnimal = new ArrayList<>();
         for (AnimalType animalType : zoo.getAnimalType()) {
             System.out.println("\n    " + animalType.getType());
             for (ArrayAnimals arrayAnimals : animalType.getArrayAnimals()) {
@@ -424,8 +424,8 @@ public class Methods {
      * @param zoo реестр животных
      * @return список животных класса по порядку
      */
-    public static List<SubArrayAnimal> getListOfAnimalsInSomeClass(Zoo zoo) {
-        List<SubArrayAnimal> listOfAnimal = new ArrayList<>();
+    public static List<Animal> getListOfAnimalsInSomeClass(Zoo zoo) {
+        List<Animal> listOfAnimal = new ArrayList<>();
         for (ArrayAnimals arrayAnimals : getAnimalSomeType(zoo).getArrayAnimals()) {
             System.out.println("  " + arrayAnimals.getSubType());
             listOfAnimal.addAll(getListOfAnimals(listOfAnimal.size(), arrayAnimals));
@@ -439,7 +439,7 @@ public class Methods {
      * @param zoo реестр животных
      * @return список животных вида по порядку
      */
-    public static List<SubArrayAnimal> getListOfAnimalsInSomeSub(Zoo zoo){
+    public static List<Animal> getListOfAnimalsInSomeSub(Zoo zoo){
         ArrayAnimals arrayAnimals = getAnimalSomeSub(zoo);
         return new ArrayList<>(getListOfAnimals(0, arrayAnimals));
     }
@@ -451,9 +451,9 @@ public class Methods {
      * @param arrayAnimals список животных одного вида
      * @return список животных вида с порядковыми номерами
      */
-    public static List<SubArrayAnimal> getListOfAnimals (int count, ArrayAnimals arrayAnimals) {
-        List<SubArrayAnimal> listOfAnimals = new ArrayList<>();
-        for (SubArrayAnimal animal : arrayAnimals.getSubArrayAnimals()) {
+    public static List<Animal> getListOfAnimals (int count, ArrayAnimals arrayAnimals) {
+        List<Animal> listOfAnimals = new ArrayList<>();
+        for (Animal animal : arrayAnimals.getAnimal()) {
             listOfAnimals.add(animal);
             System.out.println(++count + ". " + animal);
         }
@@ -522,7 +522,7 @@ public class Methods {
             String answer = answerString().toLowerCase();
             for (AnimalType animalType : zoo.getAnimalType()) {
                 for (ArrayAnimals arrayAnimals : animalType.getArrayAnimals()) {
-                    for (SubArrayAnimal animal : arrayAnimals.getSubArrayAnimals()) {
+                    for (Animal animal : arrayAnimals.getAnimal()) {
                         if (((animal.getNickname()).toLowerCase()).equals(answer)
                             || (animal.getId().toLowerCase()).equals(answer)) {
                             System.out.println(animal);
@@ -551,7 +551,7 @@ public class Methods {
      * Редактирование животного
      * @param animal выбранное животное
      */
-    public static void editAnimal(SubArrayAnimal animal) {
+    public static void editAnimal(Animal animal) {
         boolean flag = true;
         while (flag) {
             System.out.println("""
@@ -645,7 +645,7 @@ public class Methods {
      * Редактирование животного в списке
      * @param listOfAnimals список животных
      */
-    public static void editAnimalInList (List<SubArrayAnimal> listOfAnimals) {
+    public static void editAnimalInList (List<Animal> listOfAnimals) {
         boolean flag = true;
         while (flag) {
             System.out.println("\nВведите порядковый номер животного для редактирования:");
@@ -669,7 +669,7 @@ public class Methods {
     public static void delAnimal (ArrayAnimals arrayAnimals, int index) {
         System.out.println(arrayAnimals);
         System.out.println("-----------");
-        arrayAnimals.getSubArrayAnimals().remove(index);
+        arrayAnimals.getAnimal().remove(index);
         System.out.println("-----------");
         System.out.println(arrayAnimals);
     }

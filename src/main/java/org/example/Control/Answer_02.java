@@ -200,12 +200,12 @@ public class Answer_02 {
 
                             // Получение последнего Id выбранного вида
                             String lastIdOfType = "0";
-                            int sizeOfArrayAnimals = arrAn.getSubArrayAnimals().size();
+                            int sizeOfArrayAnimals = arrAn.getAnimal().size();
                             if (sizeOfArrayAnimals == 0) {
                                 lastIdOfType = arrAn.getIdSubType() + "-0";
                             } else {
                                 lastIdOfType = arrAn
-                                        .getSubArrayAnimals()
+                                        .getAnimal()
                                         .get(sizeOfArrayAnimals - 1)
                                         .getId();
                             }
@@ -223,8 +223,8 @@ public class Answer_02 {
                             // Создание дня рождения нового животного
                             String birthday = newBirthday();
 
-                            SubArrayAnimal newAnimal = new SubArrayAnimal(newIdAnimal, nickname, commands, birthday);
-                            arrAn.getSubArrayAnimals().add(newAnimal);
+                            Animal newAnimal = new Animal(newIdAnimal, nickname, commands, birthday);
+                            arrAn.getAnimal().add(newAnimal);
 
                             flag = false;
                         }
